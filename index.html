@@ -1,12 +1,22 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>My Frist SPA</title>
         <script src="./vue.js"></script>
+
+        <style>
+
+        </style>
     </head>
 
     <body>
         <div id="app">
-            {{message}}
+        {{message}}
+        </br>
+        </br>
+        <button v-on:click="Searchname">Search</button>
+        <input v-model="newband" placeholder="Restaurant Name">
+        
         </div>
 
         <script>
@@ -14,7 +24,7 @@
             
             el: '#app',
             data: {
-                message: 'Hello Vue!'
+                message: 'Welcome to Zomato!'
             }
             });
 
