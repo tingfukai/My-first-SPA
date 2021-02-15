@@ -5,26 +5,40 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 16px;
+    margin-top: 20px;
     margin-bottom: 16px;
 }
 
 div#app {
+    color: brown;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; 
+    font-size:200%;
    
 }
 
+.Location
+{
+    background-color: aliceblue;
+    border: 1px solid black;
+    line-height: normal;
+    width: 200%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 .searchin{
-    background-color: bisque;
-    width: 150%;
-    padding: 8px 12px;
+    background-color:aliceblue;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    width: 200%;
+    line-height: normal;
 }
 
 button{
-    border: blue;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 
