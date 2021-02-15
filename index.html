@@ -7,38 +7,18 @@
         <title>My Frist SPA</title>
         <script src="./vue.js"></script>
         
-        <style>
-            .searchin{
-                background-color:white;
-                border-width: 2px;
-                border-color: gray;
-                color:black;
-                padding: 5px 10px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 15px;
-                margin: 50px 100px;
-                cursor: pointer;
-                width: 300px;
-            }
-
-        </style>
+        <link rel="stylesheet" href="main.css">
     </head>
 
     <body>
         <div id="app">
-        {{message}}
-        </br>
-        </br>
-        <i class="rbbb40-1 MxLSp" color="#F57082" size="20">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#F57082" width="15" height="20" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="rbbb40-0 kIxlGM"><title>location-fill</title><path d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z"></path></svg>
-        </i>
-        <input value="" placeholder="Adelaide" class="sc-bGbJRg fCUgKz">
-        <input v-model="newand" placeholder="Search for Restaurant, Cuisine or a Dish" class="searchin">
-        <button v-on:click="Searchname">Search</button>
-       
-        
+            {{message}}
+
+            <input type="text" v-model="location" placeholder="City Name" class="Location">
+            <label for="Location">Loaction:</label>
+            <input type="text" v-model="search" placeholder="Search for Restaurant, Cuisine or a Dish" class="searchin">
+            <button v-on:click="Searchname">Search</button>
+            
         </div>
         <script src="./script.js"></script>
     </body>
